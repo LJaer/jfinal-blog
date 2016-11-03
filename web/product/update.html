@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            修改产品
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="renderer" content="webkit">
+        <link rel="stylesheet" type="text/css" href="http://7xign9.com1.z0.glb.clouddn.com/plugins/easyui/themes/default/easyui.css">
+        <link rel="stylesheet" type="text/css" href="http://7xign9.com1.z0.glb.clouddn.com/plugins/easyui/themes/icon.css">
+        <link rel="stylesheet" type="text/css" href="http://7xign9.com1.z0.glb.clouddn.com/plugins/eovaicon/icon.css">
+        <link rel="stylesheet" type="text/css" href="/eova/htmltag/eova_tag.css">
+        <link rel="stylesheet" type="text/css" href="/ui/css/common.css">
+        <link rel="stylesheet" type="text/css" href="/ui/eova/css/eova.css">
+        <script type="text/javascript" src="/ui/js/jquery.min.js">
+        </script>
+        <script type="text/javascript" src="/ui/js/json2-min.js">
+        </script>
+        <script type="text/javascript" src="/ui/js/common.js">
+        </script>
+        <script type="text/javascript" src="/ui/js/string.js">
+        </script>
+        <script type="text/javascript" src="http://7xign9.com1.z0.glb.clouddn.com/plugins/easyui/jquery.easyui.min.js">
+        </script>
+        <script type="text/javascript" src="http://7xign9.com1.z0.glb.clouddn.com/plugins/easyui/locale/easyui-lang-zh_CN.js">
+        </script>
+        <script type="text/javascript" src="/ui/easy/jquery.datagrid.js">
+        </script>
+        <link rel="stylesheet" type="text/css" href="http://7xign9.com1.z0.glb.clouddn.com/plugins/nice/jquery.validator.css">
+        <script type="text/javascript" src="http://7xign9.com1.z0.glb.clouddn.com/plugins/nice/jquery.validator.js">
+        </script>
+        <script type="text/javascript" src="http://7xign9.com1.z0.glb.clouddn.com/plugins/nice/zh-CN.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="http://7xign9.com1.z0.glb.clouddn.com/plugins/ueditor/ueditor.config.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="http://7xign9.com1.z0.glb.clouddn.com/plugins/ueditor/ueditor.all.min.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="http://7xign9.com1.z0.glb.clouddn.com/plugins/ueditor/lang/zh-cn/zh-cn.js">
+        </script>
+        <link rel="stylesheet" type="text/css" href="http://7xign9.com1.z0.glb.clouddn.com/plugins/jquery-easyui-portal/portal.css">
+        <script type="text/javascript" src="http://7xign9.com1.z0.glb.clouddn.com/plugins/jquery-easyui-portal/jquery.portal.js">
+        </script>
+        <script type="text/javascript" src="http://7xign9.com1.z0.glb.clouddn.com/plugins/My97DatePicker/WdatePicker.js">
+        </script>
+        <script type="text/javascript" src="http://7xign9.com1.z0.glb.clouddn.com/plugins/ajaxup/ajaxfileupload.js">
+        </script>
+        <script type="text/javascript" src="/ui/easy/easy.min.js">
+        </script>
+        <!-- <script type="text/javascript" src="/ui/easy/syExtJavascript.js"></script> -->
+        <!-- <script type="text/javascript" src="/ui/easy/syExtJquery.js"></script> -->
+        <!-- <script type="text/javascript" src="/ui/easy/syExtEasyUI.js"></script> -->
+        <script type="text/javascript" src="/ui/eova/eova.min.js">
+        </script>
+        <!-- <script type="text/javascript" src="/ui/eova/eova.common.js"></script> -->
+        <!-- <script type="text/javascript" src="/ui/eova/eova.text.js"></script> -->
+        <!-- <script type="text/javascript" src="/ui/eova/eova.find.js"></script> -->
+        <!-- <script type="text/javascript" src="/ui/eova/eova.auto.js"></script> -->
+        <!-- <script type="text/javascript" src="/ui/eova/eova.time.js"></script> -->
+        <!-- <script type="text/javascript" src="/ui/eova/eova.icon.js"></script> -->
+        <!-- <script type="text/javascript" src="/ui/eova/eova.combo.js"></script> -->
+        <!-- <script type="text/javascript" src="/ui/eova/eova.check.js"></script> -->
+        <script type="text/javascript" src="/eova/htmltag/eova_tag.js">
+        </script>
+    </head>
+    
+    <body>
+        <form id="updateFormproduct" method="post" class="form">
+            <div class="eova-form">
+				<fieldset style="margin: 10px;">
+					<legend>产品信息</legend>
+					<div class="eova-form-field" title="ID[id]">
+	                    <div class="eova-form-lbl">
+	                        ID:
+	                    </div>
+	                    <div>
+	                        <div id="id" name="id" value="${product.id!}" class="eova-auto">
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="eova-form-field" title="商品图片[img]" style="">
+	                    <div class="eova-form-lbl">
+	                        商品图片
+	                    </div>
+	                    <div>
+	                        <div class="eova-file">
+	                            <input type="text" id="img" name="img" value="1451664266663.jpg" style="width: 158px;">
+	                            <i class="ei">
+	                            </i>
+	                            <input type="file" id="img_file" name="img_file" style="left: 49px; top: 216px; width: 190px;border:1px solid red;cursor: pointer;">
+	                        </div>
+	                        <script>
+	                            $(function() {
+	
+	                                var $input = $('#img');
+	
+	                                var htmlOptions = eval('({})');
+	                                if (htmlOptions.disable) {
+	                                    // 灰色遮罩实现禁用
+	                                    $input.parent().mask();
+	                                }
+	
+	                                // init input file
+	                                $('.eova-file').each(function() {
+	                                    var offset = $(this).find('input[type=text]').offset();
+	                                    $(this).find('input[type=file]').css({
+	                                        left: offset.left - 1,
+	                                        top: offset.top - 1,
+	                                        width: $(this).width()
+	                                    });
+	                                });
+	
+	                                // 异步上传(动态绑定事件)
+	                                $(document).on("change", "#img_file",
+	                                function() {
+	                                    var $this = $(this);
+	                                    console.log($this.val());
+	                                    $this.siblings('input').val($this.val());
+	
+	                                    $.ajaxFileUpload({
+	                                        url: '/upload/file?name=img_file',
+	                                        secureuri: false,
+	                                        fileElementId: 'img_file',
+	                                        dataType: 'json',
+	                                        success: function(data, status) {
+	                                            // 将返回数据转换为JSON对象
+	                                            json = eval(data);
+	                                            var msg = json.msg;
+	                                            if (json.success) {
+	                                                $input.val(json.fileName);
+	                                                console.log("上传成功！");
+	                                            } else {
+	                                                alert(msg);
+	                                            }
+	                                        },
+	                                        error: function(data, status, e) {
+	                                            alert('网络异常，请稍后再试！');
+	                                        }
+	                                    });
+	                                });
+	                            });
+	                        </script>
+	                    </div>
+	                </div>
+	                <div class="eova-form-field" title="产品类型[type]" style="">
+	                    <div class="eova-form-lbl">
+	                        产品类型
+	                    </div>
+	                    <div>
+	                        <div class="eova-combo" id="type" name="type" value="1" url="/widget/comboJson/product-type"
+	                        data-options=" disable : false">
+	                        </div>
+	                        <script>
+	                            $('#type').eovacombo({
+	                                valueField: 'id',
+	                                textField: 'cn',
+	                                multiple: false
+	                            });
+	                        </script>
+	                    </div>
+	                </div>
+	                <div class="eova-form-field" title="名称[name]" style="">
+	                    <div class="eova-form-lbl red">
+	                        名称
+	                    </div>
+	                    <div>
+	                        <div class="eova-text" id="name" name="name" value="${product.name!}" data-options=" disable : false">
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="eova-form-field" title="试用单价[test_price]" style="">
+	                    <div class="eova-form-lbl">
+	                        试用单价
+	                    </div>
+	                    <div>
+	                        <div class="eova-text" id="test_price" name="test_price" value="3.0" data-options=" disable : false">
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="eova-form-field" title="商品单价[price]" style="">
+	                    <div class="eova-form-lbl">
+	                        商品单价
+	                    </div>
+	                    <div>
+	                        <div class="eova-text" id="price" name="price" value="2.4" data-options=" disable : false">
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="eova-form-field" title="库存[stock]" style="">
+	                    <div class="eova-form-lbl">
+	                        库存
+	                    </div>
+	                    <div>
+	                        <div class="eova-text" id="stock" name="stock" value="5000" data-options=" disable : false">
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="eova-form-field" title="创建时间[create_time]" style="">
+	                    <div class="eova-form-lbl red">
+	                        创建时间
+	                    </div>
+	                    <div>
+	                        <div class="eova-time" id="create_time" name="create_time" value="2015-11-06"
+	                        data-options="format:'yyyy-MM-dd', disable : false">
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="eova-form-field" title="更新时间[update_time]" style="">
+	                    <div class="eova-form-lbl">
+	                        更新时间
+	                    </div>
+	                    <div>
+	                        <div class="eova-time" id="update_time" name="update_time" value="2015-12-09 01:54:19"
+	                        data-options="format:'yyyy-MM-dd HH:mm:ss', disable : false">
+	                        </div>
+	                    </div>
+	                </div>
+				</fieldset>
+				<fieldset style="margin: 10px;">
+					<legend>产品数值</legend>
+					<div class="eova-form-field" title="消耗积分[cost_score]" style="">
+	                    <div class="eova-form-lbl">
+	                        消耗积分
+	                    </div>
+	                    <div>
+	                        <div class="eova-text" id="cost_score" name="cost_score" value="0" data-options=" disable : false">
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="eova-form-field" title="奖励积分[score]" style="">
+	                    <div class="eova-form-lbl">
+	                        奖励积分
+	                    </div>
+	                    <div>
+	                        <div class="eova-text" id="score" name="score" value="0" data-options=" disable : false">
+	                        </div>
+	                    </div>
+	                </div>
+				</fieldset>
+				<fieldset style="margin: 10px;">
+					<legend>产品规格</legend>
+					<div class="eova-form-field" title="分类[category]" style="">
+	                    <div class="eova-form-lbl red">
+	                        分类
+	                    </div>
+	                    <div>
+	                        <div class="eova-combo" id="category" name="category" value="4" url="/widget/comboJson/product-category"
+	                        data-options=" disable : false">
+	                        </div>
+	                        <script>
+	                            $('#category').eovacombo({
+	                                valueField: 'id',
+	                                textField: 'cn',
+	                                multiple: false
+	                            });
+	                        </script>
+	                    </div>
+	                </div>
+	                <div class="eova-form-field" title="材料[stuff]" style="">
+	                    <div class="eova-form-lbl red">
+	                        材料
+	                    </div>
+	                    <div>
+	                        <div class="eova-combo" id="stuff" name="stuff" value="1" url="/widget/comboJson/product-stuff"
+	                        data-options=" disable : false">
+	                        </div>
+	                        <script>
+	                            $('#stuff').eovacombo({
+	                                valueField: 'id',
+	                                textField: 'cn',
+	                                multiple: false
+	                            });
+	                        </script>
+	                    </div>
+	                </div>
+	                <div class="eova-form-field" title="尺码[sizes]" style="">
+	                    <div class="eova-form-lbl red">
+	                        尺码
+	                    </div>
+	                    <div>
+	                        <div class="eova-combo" id="sizes" name="sizes" value="3" url="/widget/comboJson/product-sizes"
+	                        data-options=" disable : false">
+	                        </div>
+	                        <script>
+	                            $('#sizes').eovacombo({
+	                                valueField: 'id',
+	                                textField: 'cn',
+	                                multiple: false
+	                            });
+	                        </script>
+	                    </div>
+	                </div>
+				</fieldset>
+        	</div>
+        </form>
+        <script>
+            $(function() {
+                var $form = $('#updateFormproduct');
+                $form.validator({
+                    debug: false,
+                    stopOnError: true,
+                    focusInvalid: false,
+                    showOk: false,
+                    timely: 0,
+                    msgMaker: false,
+                    fields: {
+                        id: {
+                            rule: "ID:required;"
+                        },
+                        category: {
+                            rule: "分类:required;"
+                        },
+                        stuff: {
+                            rule: "材料:required;"
+                        },
+                        sizes: {
+                            rule: "尺码:required;"
+                        },
+                        name: {
+                            rule: "名称:required;"
+                        },
+                        create_time: {
+                            rule: "创建时间:required;"
+                        },
+                    }
+                });
+                $form.on("validation", $.validation);
+            });
+        </script>
+        <script type="text/javascript">
+            var $form = $('#updateFormproduct');
+
+            var submitNow = function($dialog, $grid, $pjq) {
+                var url = "/form/doUpdate/product";
+                $.post(url, sy.serializeObject($form),
+                function(result) {
+                    if (result.success) {
+                        $.slideMsg("修改产品成功！", $pjq);
+                        if ($grid.context.URL.indexOf('/single_tree') != -1) {
+                            $grid.treegrid('load');
+                        } else {
+                            $grid.datagrid('load');
+                        }
+                        $dialog.dialog('destroy');
+
+                    } else {
+                        $.alert($pjq, result.msg);
+                    }
+                },
+                'json');
+            };
+
+            var submitForm = function($dialog, $grid, $pjq) {
+                // nice validator
+                $form.isValid(function(isValied) {
+                    if (isValied) {
+                        submitNow($dialog, $grid, $pjq);
+                    }
+                });
+            };
+        </script>
+    </body>
+    <script>
+        $(function() {
+            $('div[class="eova-text"]').eovatext();
+            $('div[class="eova-time"]').eovatime();
+            $('div[class="eova-auto"]').eovaauto();
+            $('div[class="eova-check"]').eovacheck();
+            $('div[class="eova-find"]').eovafind();
+            $('div[class="eova-combo"]').eovacombo();
+            $('div[class="eova-icon"]').eovaicon();
+        });
+    </script>
+
+</html>
