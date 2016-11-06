@@ -1,5 +1,6 @@
 package blog.controller;
 
+import blog.model.Article;
 import blog.model.FirstCategory;
 import blog.model.ShowPictures;
 import com.jfinal.core.Controller;
@@ -13,10 +14,18 @@ import java.util.List;
 public class IndexController extends Controller{
     public void index(){
         List<FirstCategory> firstCategoryList = FirstCategory.dao.firstCategorieList();
+        //最近6篇文章,隐藏在一级分类里
+        for (FirstCategory firstCategory:firstCategoryList) {
+            List<Article> articleList = Article.dao.findLast6ArticByFirstCategoryId(firstCategory.getId());
+            firstCategory.setArticleList(articleList);
+        }
         //一级分类
-        setAttr("firstCategory", FirstCategory.dao.firstCategorieList());
+        setAttr("firstCategory", firstCategoryList);
         //展示图片
         setAttr("showPictures", ShowPictures.dao.showPicturesList());
-        render("index.jsp");
+        //最近3篇文章
+        setAttr("last3Article", Article.dao.getLast3Article());
+
+        renderJsp("index.jsp");
     }
 }

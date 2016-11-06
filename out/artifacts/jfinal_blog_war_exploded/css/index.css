@@ -1,0 +1,21 @@
+*{margin: 0;padding:0;}
+#photo{border: solid 1px #000; padding:5px;float:left;max-width:730px;min-width:544px;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;}
+#center{width:1100px;margin:0 auto;}
+#center-left{width:750px;float:left;padding:5px;}
+#center-right{float:right;margin-top:10px;border:solid 1px green;width:350px;height: 100%;}
+.carousel-inner>.item>img{width: 730px;height:280px;display: block;}
+.lastArticle{margin-top: 5px; float:left;height:180px;border:1px solid #000;width:730px;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;}
+.last3Article-categoryImg{width:25px;height:30px;float:left;margin-left:10px;margin-right:10px;margin-top:5px;}
+.last3Article-name{padding-top: 10px;}
+.last3Article-pic{margin-top:5px;width:150px;height:120px;position: relative;top:10px;left:-30px;float:left;border:1px solid #ccc;padding:5px;}
+.last3Article-context{width:700px;height:140px;position:relative;left:10px;top:20px;}
+.last3Article-othermsg>*{float:left;margin-top: -25px;margin-left:200px;}
+.last3Article-browse{margin-left: 450px;}
+.last3Article-detail{padding:2px;margin-top:-30px;margin-left: 650px;background-color:rgb(107,189,73);-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+.last6Article{float: left;width:362px;height:200px;border:solid 1px #000;margin-top: 5px;margin-right: 5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+.last6Article-categoryIcon{width:25px;height:30px;float:left;margin-left:10px;margin-right:10px;margin-top:5px;}
+.last6Article-categoryName{padding-top: 10px;}
+.last6Article-more{float:right;margin-top: -50px;margin-right: 15px;}
+.last6Article-more-circle{font-size: 10px;color:#fff;text-align: center;background:rgb(255,157,196);padding:3px 5px;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;}
+.last6Article-article{float:left;height:160px; width:360px;border:solid 1px red;margin-top: -20px;}
+.last6Article-article-name{height: 25px;padding-top: 3px;padding-left: 10px;}

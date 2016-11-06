@@ -1,12 +1,15 @@
 package blog.config;
 
 import blog.controller.IndexController;
+import blog.controller.ShowPictureController;
 import blog.model._MappingKit;
 import com.jfinal.config.*;
 import com.jfinal.core.JFinal;
 import com.jfinal.kit.PropKit;
 import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
+import com.jfinal.plugin.activerecord.ModelRecordElResolver;
 import com.jfinal.plugin.c3p0.C3p0Plugin;
+import com.jfinal.render.JspRender;
 
 /**
  * Created by jaer on 2016/11/3.
@@ -29,6 +32,7 @@ public class BlogConfig extends JFinalConfig{
     @Override
     public void configRoute(Routes routes) {
         routes.add("/", IndexController.class);
+        routes.add("/showPictures", ShowPictureController.class);
     }
 
     public static C3p0Plugin createC3p0Plugin() {

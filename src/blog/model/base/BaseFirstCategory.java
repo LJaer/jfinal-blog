@@ -25,11 +25,11 @@ public abstract class BaseFirstCategory<M extends BaseFirstCategory<M>> extends 
 		return get("name");
 	}
 
-	public void setImg(java.lang.Integer img) {
+	public void setImg(java.lang.String img) {
 		set("img", img);
 	}
 
-	public java.lang.Integer getImg() {
+	public java.lang.String getImg() {
 		return get("img");
 	}
 

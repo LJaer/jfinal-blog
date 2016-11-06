@@ -12,6 +12,16 @@ import java.util.List;
 public class FirstCategory extends BaseFirstCategory<FirstCategory> {
 	public static final FirstCategory dao = new FirstCategory();
 
+	private List<Article> articleList;
+
+	public List<Article> getArticleList() {
+		return articleList;
+	}
+
+	public void setArticleList(List<Article> articleList) {
+		this.articleList = articleList;
+	}
+
 	/**
 	 * 所有 sql 与业务逻辑写在 Model 或 Service 中，不要写在 Controller 中，养成好习惯，有利于大型项目的开发与维护
 	 */
