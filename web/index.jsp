@@ -41,41 +41,75 @@
       <!-- 最近三篇文章 -->
       <c:forEach var="x" items="${last3Article}">
         <div class="lastArticle">
-          <img class="last3Article-categoryImg" src="http://localhost:18080/secondcategory/${x.secondcategoryimage}"/>
-          <div class="last3Article-name">${x.name}</div>
-          <c:if test="${x.contextimage}=null"></c:if>
+          <div class="last3Article-title">
+            <img class="last3Article-categoryImg" src="http://localhost:18080/secondcategory/${x.secondcategoryimage}"/>
+            <div class="last3Article-name cursor">${x.name}</div>
+          </div>
+          <div class="last3Article-msg">
             <img class="last3Article-pic" src="${x.contextimage}">
-          <div class="last3Article-context">${x.text}</div>
-          <div class="last3Article-othermsg">
-            <div class="last3Article-time">发表日期：${x.time}</div>
-            <div class="last3Article-browse">浏览次数：${x.browse}次</div>
-            <button type="button" class="last3Article-detail">阅读全文</button>
+            <div class="last3Article-context">${x.text}</div>
+            <div class="last3Article-othermsg">
+              <div class="last3Article-time">发表日期：${x.time}</div>
+              <div class="last3Article-browse">浏览次数：${x.browse}次</div>
+              <button type="button" class="last3Article-detail cursor">阅读全文</button>
+            </div>
           </div>
         </div>
       </c:forEach>
 
       <!-- 一级分类下六篇文章 -->
-      <c:forEach var="x" items="${firstCategory}">
+      <c:forEach var="x" items="${firstCategory}" >
         <div class="last6Article">
-          <c:forEach var="y" items="${x.articleList}">
-            cs
-          </c:forEach>
+          <div class="last6Article-title">
+            <img class="last6Article-categoryIcon"  src="http://localhost:18080/firstcategory/${x.img}">
+            <div class="last6Article-categoryName cursor">${x.name}</div>
+            <div class="last6Article-more cursor">
+              <div class="last6Article-more-text">more</div>
+              <div class="last6Article-more-circle">></div>
+            </div>
+          </div>
+          <HR style="FILTER: alpha(opacity=90,finishopacity=0,style=1);margin-left:5px;margin-top: 5px;margin-bottom: 0px;" width="95%" color=#ccc SIZE=1>
+          <!-- 文章列表 -->
+          <div class="last6Article-articles">
+            <c:forEach var="y" items="${x.articleList}" varStatus="status">
+              <c:if test="${status.index==0}">
+                <c:if test="${y.contextimage!=null}">
+                  <div class="last6Article-firstArticle">
+                    <img class="last6Article-firstArticleImg" src="${y.contextimage}">
+                  </div>
+                </c:if>
+                <c:if test="${y.contextimage==null}">
+                  <div class="last6Article-firstArticle">
+                    <img class="last6Article-firstArticleImg" src="${pageContext.request.contextPath}/pictures/nopicture.png">
+                  </div>
+                </c:if>
+                <div class="last6Article-firstArticleTitle cursor">${y.name}</div>
+                <div class="last6Article-firstArticleContext">${y.text}</div>
+              </c:if>
+              <c:if test="${status.index!=0}">
+                <div class="last6Article-singleArticle">
+                  <div class="last6Article-article-name cursor">${y.name}</div>
+                  <div class="last6Article-article-time"><fmt:formatDate value="${y.time}" pattern="yyyy/MM/dd" /></div>
+                </div>
+              </c:if>
+              <HR style="FILTER: alpha(opacity=90,finishopacity=0,style=1);margin-left:5px;margin-top: 25px;margin-bottom: 0px;" width="95%" color=#ccc SIZE=1>
+            </c:forEach>
+          </div>
+
         </div>
       </c:forEach>
 
 
     </div>
     <div id="center-right">
-
+      <%@ include file="jsp/common/center-right.jsp"%>
     </div>
   </div>
 
+  <div id="bottom">
+    <%@ include file="jsp/common/bottom.jsp"%>
+  </div>
 
-
-
-
-
-
-
+  <%@ include file="jsp/common/jiathis.jsp"%>
   </body>
 </html>
