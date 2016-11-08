@@ -9,3 +9,4 @@
 .article-time{float: left;}
 .article-browse{float: left;margin-left: 20px;margin-right: 40px;}
 .article-detail{float:left;background-color:rgb(107,189,73);-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+.pagination{float: left;width:730px;border:solid 1px red;}

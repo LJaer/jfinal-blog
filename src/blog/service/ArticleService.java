@@ -13,19 +13,6 @@ import org.jsoup.select.Elements;
 public class ArticleService {
     public static final ArticleService instance = new ArticleService();
 
-    public int findArticleCountByCategory(int firstCategoryId,int secondCategory){
-        int  count = 0;
-        if(secondCategory>0){
-            //根据二级分类统计文章数量
-        }else{
-            //根据一级分类统计文章数量
-            String sqlString = "select count(*) from article where secondcategoryid in (select id secondcategoryid from second_category where firstcategoryid = "+firstCategoryId+")";
-            //count =  Article.dao.findFirst(sqlString).getInt("count")
-            //return ;
-        }
-        return 0;
-    }
-
     //分页查询
     public Page<Article> findArticleListByFirstAndSecondCategoryId(int currentPage, int firstCategoryId, int secondCategoryId){
         Page<Article>  articlePage = Article.dao.paginate(1,10,"select * ","from article where secondcategoryid in (select id secondcategoryid from second_category where firstcategoryid = "+firstCategoryId+") order by time desc");

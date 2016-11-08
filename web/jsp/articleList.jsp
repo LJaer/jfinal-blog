@@ -8,10 +8,15 @@
 
     <link rel="stylesheet" type="text/css" href="/css/common.css">
     <link rel="stylesheet" type="text/css" href="/css/articleList.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/jBootsrapPage.css">
 
+
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="${pageContext.request.contextPath}/js/articleList.js"></script>
     <script src="${pageContext.request.contextPath}/js/common.js"></script>
+    <script src="${pageContext.request.contextPath}/js/jBootstrapPage.js"></script>
 </head>
 <body>
 <div id="top">
@@ -36,6 +41,10 @@
                     </div>
                 </div>
             </c:forEach>
+            <!-- 分页 -->
+            <div id="totalRow" style="visibility: hidden">${pageArticle.totalRow}</div>
+            <ul class="pagination" style="margin: 0 auto;">
+            </ul>
 
         </div>
         <div id="center-right">

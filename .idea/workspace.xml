@@ -2,26 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5da859f-0c4b-4166-b3f2-344a2a9596a6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/blog/controller/ArticleListController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/blog/service/ArticleService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/articleList.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/articleList.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/top.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jsp/articleList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/blog/config/BlogConfig.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/blog/config/BlogConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/blog/controller/IndexController.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/blog/controller/IndexController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/blog/model/Article.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/blog/model/Article.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/jBootsrapPage.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jBootstrapPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/blog/service/ArticleService.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/blog/service/ArticleService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jfinal_demo.log" afterPath="$PROJECT_DIR$/jfinal_demo.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blog/config/BlogConfig.java" afterPath="$PROJECT_DIR$/src/blog/config/BlogConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blog/controller/IndexController.java" afterPath="$PROJECT_DIR$/src/blog/controller/IndexController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blog/model/Article.java" afterPath="$PROJECT_DIR$/src/blog/model/Article.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/common.css" afterPath="$PROJECT_DIR$/web/css/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/index.css" afterPath="$PROJECT_DIR$/web/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/index.js" afterPath="$PROJECT_DIR$/web/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/jsp/common/top.jsp" afterPath="$PROJECT_DIR$/web/jsp/common/top.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blog/service/ArticleService.java" afterPath="$PROJECT_DIR$/src/blog/service/ArticleService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/articleList.css" afterPath="$PROJECT_DIR$/web/css/articleList.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/articleList.js" afterPath="$PROJECT_DIR$/web/js/articleList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/jsp/articleList.jsp" afterPath="$PROJECT_DIR$/web/jsp/articleList.jsp" />
     </list>
     <ignored path="jfinal_blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,8 +36,8 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+            <state relative-caret-position="-690">
+              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -56,18 +46,8 @@
       <file leaf-file-name="articleList.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/articleList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/common.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+            <state relative-caret-position="150">
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -76,8 +56,8 @@
       <file leaf-file-name="articleList.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/css/articleList.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+            <state relative-caret-position="251">
+              <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -86,40 +66,28 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="-151">
               <caret line="12" column="170" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="170" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="articleList.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="articleList.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/jsp/articleList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
+            <state relative-caret-position="210">
+              <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Article.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blog/model/Article.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="18" column="23" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="23" />
-              <folding>
-                <element signature="method#findLast6ArticByFirstCategoryId#0;class#Article#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArticleService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ArticleService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/blog/service/ArticleService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="29" column="127" selection-start-line="29" selection-start-column="127" selection-end-line="29" selection-end-column="127" />
+            <state relative-caret-position="231">
+              <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#articleToArticleDetail#0;class#ArticleService#0" expanded="false" />
@@ -128,13 +96,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blog/controller/IndexController.java">
+      <file leaf-file-name="Db.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/jfinal-2.2-bin-with-src.jar!/com/jfinal/plugin/activerecord/Db.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+            <state relative-caret-position="156">
+              <caret line="84" column="23" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2267#2268#0" expanded="true" />
+                <element signature="e#2310#2311#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -192,7 +161,6 @@
         <option value="$PROJECT_DIR$/web/js/common.js" />
         <option value="$PROJECT_DIR$/src/blog/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/src/blog/config/BlogConfig.java" />
-        <option value="$PROJECT_DIR$/web/js/articleList.js" />
         <option value="$PROJECT_DIR$/web/jsp/common/top.jsp" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/js/index.js" />
@@ -201,9 +169,11 @@
         <option value="$PROJECT_DIR$/src/blog/controller/ArticleListController.java" />
         <option value="$PROJECT_DIR$/web/css/common.css" />
         <option value="$PROJECT_DIR$/web/css/index.css" />
-        <option value="$PROJECT_DIR$/web/jsp/articleList.jsp" />
-        <option value="$PROJECT_DIR$/web/css/articleList.css" />
         <option value="$PROJECT_DIR$/src/blog/service/ArticleService.java" />
+        <option value="$PROJECT_DIR$/web/css/articleList.css" />
+        <option value="$PROJECT_DIR$/web/js/jBootstrapPage.js" />
+        <option value="$PROJECT_DIR$/web/jsp/articleList.jsp" />
+        <option value="$PROJECT_DIR$/web/js/articleList.js" />
       </list>
     </option>
   </component>
@@ -542,16 +512,17 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jaer\IdeaProjects\jfinal_blog\web\css" />
+      <recent name="C:\Users\jaer\IdeaProjects\jfinal_blog\web\js" />
+      <recent name="C:\Users\jaer\IdeaProjects\jfinal_blog\web\pictures" />
+      <recent name="C:\Users\jaer\IdeaProjects\jfinal_blog\web\WEB-INF\lib" />
+      <recent name="C:\Users\jaer\IdeaProjects\jfinal_blog\web\jsp\common" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jaer\IdeaProjects\jfinal_blog\web" />
       <recent name="C:\Users\jaer\IdeaProjects\jfinal_blog\src" />
       <recent name="C:\Users\jaer\IdeaProjects\jfinal_blog\src\blog\config" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\jaer\IdeaProjects\jfinal_blog\web\pictures" />
-      <recent name="C:\Users\jaer\IdeaProjects\jfinal_blog\web\WEB-INF\lib" />
-      <recent name="C:\Users\jaer\IdeaProjects\jfinal_blog\web\jsp\common" />
-      <recent name="C:\Users\jaer\IdeaProjects\jfinal_blog\src" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Unnamed">
@@ -1112,12 +1083,12 @@
       <workItem from="1478366974679" duration="3584000" />
       <workItem from="1478370977521" duration="366000" />
       <workItem from="1478371376717" duration="29697000" />
-      <workItem from="1478482799062" duration="25148000" />
+      <workItem from="1478482799062" duration="37374000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104803000" />
+    <option name="totallyTimeSpent" value="117029000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="40" width="1604" height="867" extended-state="0" />
@@ -1166,7 +1137,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="35" />
+      <option name="time" value="40" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1175,42 +1146,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/blog/config/BlogConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2100">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1997#1998#0" expanded="true" />
-            <element signature="e#2044#2045#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blog/model/FirstCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="16" column="39" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#406#407#0" expanded="false" />
-            <element signature="e#431#432#0" expanded="false" />
-            <element signature="e#489#490#0" expanded="false" />
-            <element signature="e#526#527#0" expanded="false" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#717#718#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/blog/model/Article.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1860">
@@ -1498,26 +1433,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/articleList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -1532,30 +1451,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="12" column="170" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="170" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/articleList.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/articleList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/blog/controller/ArticleListController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -1566,14 +1461,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/jfinal-2.2-bin-with-src.jar!/com/jfinal/plugin/activerecord/Db.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="84" column="23" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
+          <folding>
+            <element signature="e#2267#2268#0" expanded="true" />
+            <element signature="e#2310#2311#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/articleList.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-690">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/jBootsrapPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <marker date="1478589123753" expanded="true" signature="2958:2982" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jBootstrapPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22">
+          <caret line="287" column="55" selection-start-line="287" selection-start-column="55" selection-end-line="287" selection-end-column="55" />
+          <folding>
+            <marker date="1478590384788" expanded="true" signature="903:910" ph="«" />
+            <marker date="1478590384788" expanded="true" signature="1483:1490" ph="»" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-151">
+          <caret line="12" column="170" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="170" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/blog/service/ArticleService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="29" column="127" selection-start-line="29" selection-start-column="127" selection-end-line="29" selection-end-column="127" />
+        <state relative-caret-position="231">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#articleToArticleDetail#0;class#ArticleService#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/articleList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/articleList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
