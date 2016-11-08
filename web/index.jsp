@@ -11,6 +11,7 @@
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <script src="js/index.js"></script>
+    <script src="${pageContext.request.contextPath}/js/common.js"></script>
 
     <link rel="stylesheet" type="text/css" href="/css/common.css">
     <link rel="stylesheet" type="text/css" href="/css/index.css">
@@ -43,7 +44,7 @@
         <div class="lastArticle">
           <div class="last3Article-title">
             <img class="last3Article-categoryImg" src="http://localhost:18080/secondcategory/${x.secondcategoryimage}"/>
-            <div class="last3Article-name cursor">${x.name}</div>
+            <div class="last3Article-name cursor" onmouseover="this.style.color='red';" onmouseout="this.style.color='black'">${x.name}</div>
           </div>
           <div class="last3Article-msg">
             <img class="last3Article-pic" src="${x.contextimage}">
@@ -51,7 +52,7 @@
             <div class="last3Article-othermsg">
               <div class="last3Article-time">发表日期：${x.time}</div>
               <div class="last3Article-browse">浏览次数：${x.browse}次</div>
-              <button type="button" class="last3Article-detail cursor">阅读全文</button>
+              <button type="button" class="last3Article-detail cursor" onmouseover="this.style.color='red';" onmouseout="this.style.color='black'">阅读全文</button>
             </div>
           </div>
         </div>
@@ -62,8 +63,8 @@
         <div class="last6Article">
           <div class="last6Article-title">
             <img class="last6Article-categoryIcon"  src="http://localhost:18080/firstcategory/${x.img}">
-            <div class="last6Article-categoryName cursor">${x.name}</div>
-            <div class="last6Article-more cursor">
+            <div class="last6Article-categoryName cursor" onmouseover="this.style.color='red';" onmouseout="this.style.color='black'">${x.name}</div>
+            <div class="last6Article-more cursor" onmouseover="this.style.color='red';" onmouseout="this.style.color='black'">
               <div class="last6Article-more-text">more</div>
               <div class="last6Article-more-circle">></div>
             </div>
@@ -83,12 +84,12 @@
                     <img class="last6Article-firstArticleImg" src="${pageContext.request.contextPath}/pictures/nopicture.png">
                   </div>
                 </c:if>
-                <div class="last6Article-firstArticleTitle cursor">${y.name}</div>
+                <div class="last6Article-firstArticleTitle cursor" onmouseover="this.style.color='red';" onmouseout="this.style.color='black'">${y.name}</div>
                 <div class="last6Article-firstArticleContext">${y.text}</div>
               </c:if>
               <c:if test="${status.index!=0}">
                 <div class="last6Article-singleArticle">
-                  <div class="last6Article-article-name cursor">${y.name}</div>
+                  <div class="last6Article-article-name cursor" onmouseover="this.style.color='red';" onmouseout="this.style.color='black'">${y.name}</div>
                   <div class="last6Article-article-time"><fmt:formatDate value="${y.time}" pattern="yyyy/MM/dd" /></div>
                 </div>
               </c:if>

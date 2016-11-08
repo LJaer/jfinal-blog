@@ -1,0 +1,11 @@
+.article{float: left;width:730px;height: 200px;margin-top:5px;border:solid 1px #000;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+.article-title{float: left;width:730px;height: 40px;border-bottom:solid 1px #ccc;}
+.article-CategoryIcon{float:left;width: 30px;height: 30px;margin: 5px;}
+.article-Name{float: left;max-width: 680px;margin-top: 10px;margin-left: 5px;}
+.article-msg{float:left;width:730px;height: 158px;}
+.article-img{float: left;height: 140px;width: 190px;padding: 10px;}
+.article-context{float: left;height: 90px;width: 480px;margin-top: 20px;margin-left: 15px;}
+.article-othermsg{float: left;height: 25px;width:490px;margin-top: 10px;margin-left: 20px;}
+.article-time{float: left;}
+.article-browse{float: left;margin-left: 20px;margin-right: 40px;}
+.article-detail{float:left;background-color:rgb(107,189,73);-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}

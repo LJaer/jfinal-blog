@@ -1,5 +1,6 @@
 package blog.config;
 
+import blog.controller.ArticleListController;
 import blog.controller.IndexController;
 import blog.controller.ShowPictureController;
 import blog.model._MappingKit;
@@ -33,6 +34,7 @@ public class BlogConfig extends JFinalConfig{
     public void configRoute(Routes routes) {
         routes.add("/", IndexController.class);
         routes.add("/showPictures", ShowPictureController.class);
+        routes.add("/ArticleList", ArticleListController.class);
     }
 
     public static C3p0Plugin createC3p0Plugin() {

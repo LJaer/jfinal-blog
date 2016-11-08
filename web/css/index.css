@@ -1,5 +1,5 @@
 *{margin: 0;padding:0}
-#photo{border: solid 1px #000;width:730px; height:280px;padding:5px;float:left;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;}
+#photo{border: solid 1px #000;margin-top:5px;width:730px; height:280px;padding:5px;float:left;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;}
 .carousel-inner>.item>img{width: 730px;height:270px;display: block;}
 .lastArticle{margin-top: 5px; float:left;height:180px;border:1px solid #000;width:730px;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;}
 .last3Article-title{height: 40px;}

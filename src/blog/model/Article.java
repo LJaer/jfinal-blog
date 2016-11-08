@@ -2,6 +2,7 @@ package blog.model;
 
 import blog.model.base.BaseArticle;
 import blog.utils.HtmlParse;
+import com.jfinal.plugin.activerecord.Page;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
@@ -120,4 +121,6 @@ public class Article extends BaseArticle<Article> {
 		}
 		return articleList;
 	}
+
+
 }
