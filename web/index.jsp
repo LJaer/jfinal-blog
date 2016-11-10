@@ -63,8 +63,8 @@
         <div class="last6Article">
           <div class="last6Article-title">
             <img class="last6Article-categoryIcon"  src="http://localhost:18080/firstcategory/${x.img}">
-            <div class="last6Article-categoryName cursor" onmouseover="this.style.color='red';" onmouseout="this.style.color='black'">${x.name}</div>
-            <div class="last6Article-more cursor" onmouseover="this.style.color='red';" onmouseout="this.style.color='black'">
+            <div onclick="titleChoice(this)" firstcategoryid="${x.id}" class="last6Article-categoryName cursor" onmouseover="this.style.color='red';" onmouseout="this.style.color='black'">${x.name}</div>
+            <div onclick="titleChoice(this)" firstcategoryid="${x.id}" class="last6Article-more cursor" onmouseover="this.style.color='red';" onmouseout="this.style.color='black'">
               <div class="last6Article-more-text">more</div>
               <div class="last6Article-more-circle">></div>
             </div>

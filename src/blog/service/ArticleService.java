@@ -14,8 +14,8 @@ public class ArticleService {
     public static final ArticleService instance = new ArticleService();
 
     //分页查询
-    public Page<Article> findArticleListByFirstAndSecondCategoryId(int currentPage, int firstCategoryId, int secondCategoryId){
-        Page<Article>  articlePage = Article.dao.paginate(1,10,"select * ","from article where secondcategoryid in (select id secondcategoryid from second_category where firstcategoryid = "+firstCategoryId+") order by time desc");
+    public Page<Article> findArticleListByFirstAndSecondCategoryId(int pageNum, int firstCategoryId, int secondCategoryId){
+        Page<Article>  articlePage = Article.dao.paginate(pageNum,10,"select * ","from article where secondcategoryid in (select id secondcategoryid from second_category where firstcategoryid = "+firstCategoryId+") order by time desc");
         for (Article article:articlePage.getList()) {
             article = articleToArticleDetail(article);
         }
@@ -23,7 +23,7 @@ public class ArticleService {
     }
 
     //将article的正文和正文图片，二级分类图标设置到article属性
-    private Article articleToArticleDetail(Article article){
+    public Article articleToArticleDetail(Article article){
         String html = article.getHtml();
         if(html!=null){
             Elements elements = HtmlParse.getInstance().getHtmlImg(html);

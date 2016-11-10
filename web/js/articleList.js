@@ -6,8 +6,8 @@ $(document).ready(function () {
     $("#firstcategoryid"+firstCategoryId).css("color","red");
     //初始化分页page
     var totalRow = $("#totalRow").html();
-    createPage(10, 8, totalRow);
-});
+    createPage(10, 5, totalRow);
+})
 
 function createPage(pageSize, buttons, total) {
     $(".pagination").jBootstrapPage({
@@ -15,8 +15,24 @@ function createPage(pageSize, buttons, total) {
         total : total,
         maxPageButton:buttons,
         onPageClicked: function(obj, pageIndex) {
-            alert((pageIndex+1)+'页');
+            var page = pageIndex+1;
+            var firstcategoryid = getCookie("firstcategoryid");
+            var secondcategoryid = -1;
+            $.get(
+                '/ArticleList/goOtherList',
+                {
+                    page:page,
+                    firstcategoryid:firstcategoryid,
+                    secondcategoryid:secondcategoryid
+                },
+                function (data) {
+                    $("#articleList").html(data);
+                    $('body,html').animate({scrollTop:0},0);
+                }
+            );
         }
     });
 }
+
+
 

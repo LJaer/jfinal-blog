@@ -8,8 +8,7 @@
 
     <link rel="stylesheet" type="text/css" href="/css/common.css">
     <link rel="stylesheet" type="text/css" href="/css/articleList.css">
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/jBootsrapPage.css">
-
+    <link rel="stylesheet" type="text/css" href="/css/jBootsrapPage.css">
 
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -24,28 +23,14 @@
 
     <div id="center">
         <div id="center-left">
-            <c:forEach var="x" items="${pageArticle.list}">
-                <div class="article">
-                    <div class="article-title">
-                        <img class="article-CategoryIcon" src="http://localhost:18080/secondcategory/${x.secondcategoryimage}">
-                        <div class="article-Name cursor">${x.name}</div>
-                    </div>
-                    <div class="article-msg">
-                        <img class="article-img" src="${x.contextimage}">
-                        <div class="article-context">${x.text}</div>
-                        <div class="article-othermsg">
-                            <div class="article-time">发表日期：${x.time}</div>
-                            <div class="article-browse">浏览次数：${x.browse}次</div>
-                            <button type="button" class="article-detail cursor" onmouseover="this.style.color='red';" onmouseout="this.style.color='black'">阅读全文</button>
-                        </div>
-                    </div>
-                </div>
-            </c:forEach>
+            <div id="articleList">
+                <jsp:include page="articlePage.jsp"></jsp:include>
+            </div>
             <!-- 分页 -->
-            <div id="totalRow" style="visibility: hidden">${pageArticle.totalRow}</div>
-            <ul class="pagination" style="margin: 0 auto;">
-            </ul>
-
+            <div id="totalRow" style="visibility: hidden;float: left;">${pageArticle.totalRow}</div>
+            <div id="pageDiv">
+                <ul class="pagination" style="margin: 0 auto;"> </ul>
+            </div>
         </div>
         <div id="center-right">
             <%@ include file="/jsp/common/center-right.jsp"%>
