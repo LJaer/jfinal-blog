@@ -7,6 +7,8 @@ import com.jfinal.plugin.activerecord.Page;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import java.util.List;
+
 /**
  * Created by jaer on 2016/11/7.
  */
@@ -50,5 +52,11 @@ public class ArticleService {
             article.setSecondcategoryimage(imgSrc);
         }
         return  article;
+    }
+
+    //根据articleid查询article
+    public Article findArticleById(int articleid){
+        List<Article> articleList = Article.dao.find("select * from article where id = ?",articleid);
+        return articleList.get(0);
     }
 }

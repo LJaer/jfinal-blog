@@ -23,7 +23,7 @@ public class IndexController extends Controller{
         //一级分类
         setAttr("firstCategory", firstCategoryList);
         //展示图片
-        setAttr("showPictures", ShowPictures.dao.showPicturesList());
+        setAttr("showPicture", ShowPictures.dao.showPicturesList());
         //最近3篇文章
         setAttr("last3Article", Article.dao.getLast3Article());
 

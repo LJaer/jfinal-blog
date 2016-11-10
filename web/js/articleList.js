@@ -34,5 +34,11 @@ function createPage(pageSize, buttons, total) {
     });
 }
 
+function articleChoice(obj){
+    //获取点击的articleid
+    var articleId = $(obj).attr("articleId");
+    window.location.href =  "/ArticleDetail?"+"articleid="+articleId;
+}
+
 
 

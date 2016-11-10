@@ -44,7 +44,7 @@
         <div class="lastArticle">
           <div class="last3Article-title">
             <img class="last3Article-categoryImg" src="http://localhost:18080/secondcategory/${x.secondcategoryimage}"/>
-            <div class="last3Article-name cursor" onmouseover="this.style.color='red';" onmouseout="this.style.color='black'">${x.name}</div>
+            <div onclick="articleChoice(this)" articleId="${x.id}" class="last3Article-name cursor" onmouseover="this.style.color='red';" onmouseout="this.style.color='black'">${x.name}</div>
           </div>
           <div class="last3Article-msg">
             <img class="last3Article-pic" src="${x.contextimage}">
@@ -52,7 +52,7 @@
             <div class="last3Article-othermsg">
               <div class="last3Article-time">发表日期：${x.time}</div>
               <div class="last3Article-browse">浏览次数：${x.browse}次</div>
-              <button type="button" class="last3Article-detail cursor" onmouseover="this.style.color='red';" onmouseout="this.style.color='black'">阅读全文</button>
+              <button onclick="articleChoice(this)"  articleId="${x.id}" type="button" class="last3Article-detail cursor" onmouseover="this.style.color='red';" onmouseout="this.style.color='black'">阅读全文</button>
             </div>
           </div>
         </div>
@@ -84,12 +84,12 @@
                     <img class="last6Article-firstArticleImg" src="${pageContext.request.contextPath}/pictures/nopicture.png">
                   </div>
                 </c:if>
-                <div class="last6Article-firstArticleTitle cursor" onmouseover="this.style.color='red';" onmouseout="this.style.color='black'">${y.name}</div>
+                <div onclick="articleChoice(this)" articleId="${y.id}" class="last6Article-firstArticleTitle cursor" onmouseover="this.style.color='red';" onmouseout="this.style.color='black'">${y.name}</div>
                 <div class="last6Article-firstArticleContext">${y.text}</div>
               </c:if>
               <c:if test="${status.index!=0}">
                 <div class="last6Article-singleArticle">
-                  <div class="last6Article-article-name cursor" onmouseover="this.style.color='red';" onmouseout="this.style.color='black'">${y.name}</div>
+                  <div onclick="articleChoice(this)" articleId="${y.id}" class="last6Article-article-name cursor" onmouseover="this.style.color='red';" onmouseout="this.style.color='black'">${y.name}</div>
                   <div class="last6Article-article-time"><fmt:formatDate value="${y.time}" pattern="yyyy/MM/dd" /></div>
                 </div>
               </c:if>
