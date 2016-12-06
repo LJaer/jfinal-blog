@@ -27,19 +27,15 @@ tomcat8
 ###3、运行效果
 ####前端展示效果
 
-为防止效果图不能正常显示，链接地址：
+链接地址：
 
 http://oe53dpmqz.bkt.clouddn.com/20161206002.gif
 
-![pre](http://oe53dpmqz.bkt.clouddn.com/20161206002.gif)
-
 ####后端展示效果
 
-为防止效果图不能正常显示，链接地址：
+链接地址：
 
 http://oe53dpmqz.bkt.clouddn.com/20161206003.gif
-
-![background](http://oe53dpmqz.bkt.clouddn.com/20161206003.gif)
 
 ###4、部署
 
